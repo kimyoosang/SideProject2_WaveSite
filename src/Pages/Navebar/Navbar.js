@@ -1,4 +1,5 @@
 import React from "react";
+import "./Navbar.css";
 
 function Navbar() {
   return (
@@ -19,11 +20,10 @@ function Navbar() {
             Contact
           </a>
         </nav>
-        <div className="floating-bg">
-          <h1 className="section-1-heading">Creative Design</h1>
-          <div className="logo">
-            <i className="fas fa-bezier-curve"></i>
-          </div>
+        <div class="floating-bg"></div>
+        <h1 class="section-1-heading">Creative Design</h1>
+        <div class="logo">
+          <i class="fas fa-bezier-curve"></i>
         </div>
       </section>
     </>
