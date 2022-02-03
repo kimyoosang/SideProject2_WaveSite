@@ -1,7 +1,12 @@
 import "./App.css";
+import PageContainer from "./Pages/PageContainer";
 
 function App() {
-  return <div className="App">안녕하세요</div>;
+  return (
+    <div className="App">
+      <PageContainer />
+    </div>
+  );
 }
 
 export default App;
