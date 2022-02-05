@@ -8,7 +8,7 @@ function CardPage() {
   return (
     <>
       <section class="section-2" id="customers">
-        <h1 class="section-heading">Customers</h1>
+        <h1 class="section-heading">Cards</h1>
         <div class="customers-wrapper">
           <div class="customer">
             <i class="fas fa-quote-left"></i>
