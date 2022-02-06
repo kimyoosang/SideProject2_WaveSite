@@ -5,18 +5,18 @@ function Navbar() {
   return (
     <>
       <title>Creative Design</title>
-      <section className="section-1">
+      <section className="section-1" id="home">
         <nav className="navbar">
-          <a href="" className="navbar-link">
+          <a href="#home" className="navbar-link">
             Design
           </a>
-          <a href="" className="navbar-link">
+          <a href="#customers" className="navbar-link">
             Customers
           </a>
-          <a href="" className="navbar-link">
+          <a href="#team" className="navbar-link">
             Team
           </a>
-          <a href="" className="navbar-link">
+          <a href="#contact" className="navbar-link">
             Contact
           </a>
         </nav>

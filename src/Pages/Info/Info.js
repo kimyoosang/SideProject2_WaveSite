@@ -21,7 +21,7 @@ function Info() {
   };
 
   return (
-    <section className="section-3">
+    <section className="section-3" id="team">
       <h1 className="section-heading">Team</h1>
       <div className="team-wrapper">
         <div className="team-member">
