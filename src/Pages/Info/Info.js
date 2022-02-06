@@ -1,11 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import member1 from "../../images/team-member-1.jpg";
 import member2 from "../../images/team-member-2.jpg";
 import member3 from "../../images/team-member-3.jpg";
 
 import "./Info.css";
 
-function info() {
+function Info() {
+  const [btn1, setBtn1] = useState(false);
+  const [btn2, setBtn2] = useState(false);
+  const [btn3, setBtn3] = useState(false);
+
+  const btn1Handelr = () => {
+    setBtn1(!btn1);
+  };
+  const btn2Handelr = () => {
+    setBtn2(!btn2);
+  };
+  const btn3Handelr = () => {
+    setBtn3(!btn3);
+  };
+
   return (
     <section className="section-3">
       <h1 className="section-heading">Team</h1>
@@ -25,10 +39,14 @@ function info() {
           <a href="" className="projects-btn">
             Projects
           </a>
-          <div className="story-btn" title="My Story">
-            <div className="story-ben-line"></div>
+          <div
+            className={btn1 ? "story-btn change" : "story-btn"}
+            title="My Story"
+            onClick={btn1Handelr}
+          >
+            <div className="story-btn-line"></div>
           </div>
-          <div className="story">
+          <div className={btn1 ? "story change" : "story"}>
             <h4 className="story-heading">About Me</h4>
             <p className="story-paragraph">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero
@@ -53,10 +71,14 @@ function info() {
           <a href="" className="projects-btn">
             Projects
           </a>
-          <div className="story-btn" title="My Story">
-            <div className="story-ben-line"></div>
+          <div
+            className={btn2 ? "story-btn change" : "story-btn"}
+            title="My Story"
+            onClick={btn2Handelr}
+          >
+            <div className="story-btn-line"></div>
           </div>
-          <div className="story">
+          <div className={btn2 ? "story change" : "story"}>
             <h4 className="story-heading">About Me</h4>
             <p className="story-paragraph">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero
@@ -81,10 +103,14 @@ function info() {
           <a href="" className="projects-btn">
             Projects
           </a>
-          <div className="story-btn" title="My Story">
-            <div className="story-ben-line"></div>
+          <div
+            className={btn3 ? "story-btn change" : "story-btn"}
+            title="My Story"
+            onClick={btn3Handelr}
+          >
+            <div className="story-btn-line"></div>
           </div>
-          <div className="story">
+          <div className={btn3 ? "story change" : "story"}>
             <h4 className="story-heading">About Me</h4>
             <p className="story-paragraph">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero
@@ -99,4 +125,4 @@ function info() {
   );
 }
 
-export default info;
+export default Info;
