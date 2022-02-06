@@ -1,5 +1,6 @@
 import React from "react";
 import { TOTAL_SCREENS } from "../utils/commonUtils";
+import ScrollUpBtn from "../Component/ScrollUpBtn";
 
 function PageContainer() {
   const mapAllScreens = () => {
@@ -15,7 +16,12 @@ function PageContainer() {
       )
     );
   };
-  return <div className="container">{mapAllScreens()}</div>;
+  return (
+    <div className="container">
+      {mapAllScreens()}
+      <ScrollUpBtn />
+    </div>
+  );
 }
 
 export default PageContainer;

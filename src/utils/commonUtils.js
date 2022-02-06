@@ -21,4 +21,5 @@ export const TOTAL_SCREENS = [
     screen_name: "Contact",
     component: Contact,
   },
+  {},
 ];

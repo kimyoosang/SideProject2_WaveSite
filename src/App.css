@@ -30,3 +30,28 @@ html {
   opacity: 0.1;
   text-shadow: 2rem 2rem 4rem #aaa;
 }
+
+@media screen and (max-width: 1400px) {
+  .section-heading {
+    font-size: 8rem;
+    margin-bottom: 10rem;
+  }
+}
+@media (max-width: 750px) {
+  html {
+    font-size: 50%;
+  }
+
+  .section-heading {
+    margin-bottom: 5rem;
+  }
+}
+
+@media (max-width: 550px) {
+  html {
+    font-size: 45%;
+  }
+  .section-heading {
+    font-size: 6rem;
+  }
+}
