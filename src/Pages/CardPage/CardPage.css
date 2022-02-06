@@ -70,3 +70,23 @@
   font-size: 2rem;
   font-weight: 700;
 }
+
+@media screen and (max-width: 1400px) {
+  .section-2 {
+    height: auto;
+  }
+
+  .customers-wrapper {
+    flex-wrap: wrap;
+  }
+
+  .customer {
+    margin: 5rem 10rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .customer {
+    margin: 5rem 0;
+  }
+}

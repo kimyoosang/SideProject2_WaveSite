@@ -135,3 +135,22 @@
   letter-spacing: 0.1rem;
   text-indent: 2rem;
 }
+@media screen and (max-width: 1400px) {
+  .section-3 {
+    height: auto;
+  }
+
+  .team-wrapper {
+    flex-wrap: wrap;
+  }
+
+  .team-member {
+    margin: 5rem 10rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .team-member {
+    margin: 5rem 0;
+  }
+}

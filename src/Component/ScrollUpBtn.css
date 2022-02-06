@@ -16,3 +16,10 @@
 .scroll-up-btn:hover {
   background-color: #32e7ff;
 }
+
+@media (max-width: 550px) {
+  .scroll-up-btn {
+    bottom: 2rem;
+    right: 2rem;
+  }
+}
